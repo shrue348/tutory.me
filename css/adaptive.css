@@ -1,0 +1,134 @@
+@media (max-width: 1200px) {
+	.block2:before { right: -50px; }
+	.block3:before { left: -250px; }
+	.block4:before { right: -250px; }
+	.block6:before { right: -250px; }
+	.footer:before { right: -50px; }
+
+	.footer_content { margin-left: 100px;}
+
+	.block1_logo,
+	.block1_header,
+	.block1_form,
+	.block1_slogan { margin: 0 10%; }
+	.block1_logo { margin: 0 14%; }
+
+	.block1_header { margin-bottom: 80px; font-size: 40px;}
+	.block1_form { margin-bottom: 60px;}
+	.block1_slogan { margin-bottom: 135px; font-size: 25px;}
+
+	.block7 .full_description { margin: 0 10%;}
+
+	.block_header { margin: 60px 28px; font-size: 35px;}
+	.block_tabs__content { margin-bottom: 120px; padding: 0 28px;}
+
+	.block_row_items { padding: 0 10%; }
+
+	.block_tabs__head_wrap { padding-bottom: 15px; margin-bottom: 65px; overflow-x: auto; overflow-y: hidden; position: relative;}
+	.block_tabs__head_wrap:before { position: absolute; z-index: -1; content: ''; left: 0; right: 0; bottom: 17px; margin: auto; border-bottom: 1px solid #a7a9ac;}
+	.block_tabs__head { display: block; white-space: nowrap; border-bottom: none; width: auto;}
+	.block_tabs__head > li { display: inline-block; margin: 0 18px;}
+
+	.main_menu { display: none;}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.block2:before { right: -150px; }
+	.block3:before { left: -450px; }
+	.block4:before { right: -400px; }
+	.block6:before { right: -150px; }
+	.footer:before { right: -150px; }
+
+	.footer_content { margin-left: 50px;}
+	.footer_block:not(:last-child) { margin-right: 22%;}
+
+	.block1_logo,
+	.block1_header,
+	.block1_form,
+	.block1_slogan { margin: 0 7%; }
+	.block1_logo { margin: 0 10%; }
+
+	.block1_header { margin-bottom: 80px;}
+	.block1_form { margin-bottom: 60px;}
+	.block1_slogan { margin-bottom: 135px;}
+
+	.block7 .full_description { margin: 0 28px;}
+	.block_header { margin: 50px 28px; }
+	.block_tabs__content { margin-bottom: 90px;}
+	.block_row_items { padding: 0 5%; }
+
+
+
+}
+ 
+@media (max-width: 767px) {
+	.block2:before { right: -250px; }
+	.block3:before { left: -650px; }
+	.block4:before { right: -550px; }
+	.block6:before { right: -550px; }
+	.footer:before { right: -250px; }
+	
+	.footer_content { margin-left: 28px;}
+	.footer_block:not(:last-child) { margin-right: 22%;}
+
+	.block1_logo,
+	.block1_header,
+	.block1_form,
+	.block1_slogan { margin: 0 0%; }
+	.block1_logo { margin: 0 9% 20px; display: inline-block;}
+	.block1_logo img { height: 48px; width: 138px;}
+
+	.block1_top { margin: 36px 0 86px;}
+	.block1_header { margin-bottom: 80px;}
+	.block1_form { margin-bottom: 30px;}
+	.block1_slogan { margin-bottom: 135px;}
+
+	.block6 .block_tabs__content > .col-6 { width: 100%; margin-bottom: 25px;}
+	.block6 .block_tabs__content .block_video_desc { margin-top: 0;}
+
+	.block8 .block_tabs__content { display: block; box-sizing: border-box;}
+	.block8 .block_tabs__content > .table-cell { display: block; width: auto;}
+	.block8 .block_tabs__content .cases_header { margin-top: 0; line-height: 1.3; margin-bottom: 30px; width: auto;}
+
+	.block_header { margin: 40px 28px; }
+
+	.block_tabs__content { margin-bottom: 70px;}
+	.block_tabs__content .flex .block_img_wrap { margin-right: 0;}
+
+	.block_row_items { padding: 0 30px;}
+	.block_row_items > .col-4 { width: 100%; margin-bottom: 65px;}
+	.block_row_item__img { margin-bottom: 23px;}
+	.block_row_item__header { font-size: 26px; margin-bottom: 10px;}
+
+	.block4 .block_img_wrap + .full_description { width: auto; }
+
+	.freetrial_form { max-width: 285px; margin: 0 auto;}
+	.freetrial_form .col-6 { width: 100%;}
+	.freetrial_link { font-size: 17px;}
+	.block_header.freetrial_header { text-align: center;}
+
+	.popup_login__block { max-width: 100%;}
+
+}
+ 
+@media (max-width: 480px) {
+	.block1_form input[type="text"] { width: 100%; margin-right: 0;}
+	.footer_content { margin-left: 28px;}
+
+	.freetrial_link { font-size: 16px; width: 50%;}
+	.freetrial_link.col-4:nth-child(3n+1) { clear: none;}
+	.freetrial_link.col-4:nth-child(2n+1) { clear: left;}
+
+	.block_tabs__head > li > a { max-width: calc(100vw - 100px) !important;}
+
+	.main_menu__toggle { width: 100px;}
+	.main_menu__login { top: 0;}
+	.main_menu__login_link { height: 42px; line-height: 42px; font-size: 18px;}
+	.main_menu__login_btn.btn { height: 42px; line-height: 42px; font-size: 18px;}
+
+	.popup .block1_top { margin: 36px 0 36px;}
+	.popup_menu li { margin-bottom: 20px;}
+
+	.footer_content { white-space: normal;}
+	.footer_block { float: none; margin: 0 !important; width: 100%; display: block;}
+}
