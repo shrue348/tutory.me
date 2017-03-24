@@ -297,12 +297,10 @@ select {
 /*-----------------*/
 .l-block { position: relative; }
 
-
-
-.block2 .scrollback { position: absolute; z-index: -1; right: 0; bottom: 0; background: url(../img/block_2_back.png) no-repeat scroll center transparent; width: 340px; height: 341px; }
-.block3 .scrollback { position: absolute; z-index: -1; left: 0; top: 106px; background: url(../img/block_3_back.png) no-repeat scroll center transparent; width: 1049px; height: 1050px; }
-.block4 .scrollback { position: absolute; z-index: -1; right: 0; top: -106px; background: url(../img/block_3_back_2.png) no-repeat scroll center transparent; width: 727px; height: 734px; }
-.block6 .scrollback { position: absolute; z-index: -1; right: 0; top: -205px; background: url(../img/block_6_back.png) no-repeat scroll center transparent; width: 748px; height: 748px; }
+.block2 .scrollback { position: absolute; z-index: -1; left: 81%; bottom: 0; background: url(../img/block_2_back.png) no-repeat scroll center transparent; width: 340px; height: 341px; }
+.block3 .scrollback { position: absolute; z-index: -1; right: 37%; top: 106px; background: url(../img/block_3_back.png) no-repeat scroll center transparent; width: 1049px; height: 1050px; }
+.block4 .scrollback { position: absolute; z-index: -1; left: 57%; top: -106px; background: url(../img/block_3_back_2.png) no-repeat scroll center transparent; width: 727px; height: 734px; }
+.block6 .scrollback { position: absolute; z-index: -1; left: 57%; top: -205px; background: url(../img/block_6_back.png) no-repeat scroll center transparent; width: 748px; height: 748px; }
 .footer:before { position: absolute; z-index: -1; right: -130px; top: -305px; content: url(../img/block_2_back.png); }
 
 
@@ -373,81 +371,45 @@ select {
 .block_header { margin-top: 80px; margin-left: 196px; margin-bottom: 78px;}
 
 
-.block_tabs__head_wrap {margin-bottom: 84px; }
-.block_tabs__head { width: 100%; display: table; table-layout: fixed; position: relative; font-size: 18px; border-bottom: 1px solid #a7a9ac; }
-.block_tabs__head > li { display: table-cell; text-align: center; position: relative; z-index: 1;}
-.block_tabs__head > li > a { display: inline-block; font-family: "LatoLight"; padding: 10px 13px; border-bottom: 8px solid transparent; margin-bottom: -13px; color: #a0a0a0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.block_tabs__head > li.active > a {  font-family: "LatoBold"; border-bottom: 8px solid #FFD530; color: #000;}
-
 .block_tabs__content .flex { display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: wrap-reverse;}
 .block_tabs__content .flex .block_img_wrap { margin-right: 100px; }
 .block_tabs__content .flex .block_img_wrap,
 .block_tabs__content .flex .full_description { margin-bottom: 30px; }
-
 .block_tabs__content { margin-bottom: 177px; }
 .block_tabs__content .full_description { padding-left: : 20px; }
 
-/*.swipe-tabs { overflow: hidden; }*/
-/*.swipe-tabs-container { overflow: hidden; }*/
-.slick-initialized .swipe-tab-content {
-    position: relative;
-    min-height: 25px;
-    float: left;
+
+.swipe-tabs { border-bottom: 1px solid #a7a9ac; margin-bottom: 84px;}
+.slick-list { overflow: hidden; margin-bottom: -11px; }
+.slick-track {
+    white-space: nowrap;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
 }
-
-
 .slick-initialized .swipe-tab {
-    display: block;
-    float: left;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: inline-block;
+    height: 54px;
     background: none;
     border: 0;
     cursor: pointer;
     text-align: center;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+
 }
-.slick-initialized .swipe-tab > span { display: inline-block; font-family: "LatoLight"; font-size: 18px;  -webkit-transition: all 0.2s; color: #a0a0a0; border-bottom: 8px solid transparent;}
-.slick-initialized .swipe-tab.active-tab > span { display: inline-block; font-family: "LatoBold"; color: #000; border-bottom: 8px solid #ffd530;}
+.slick-initialized .swipe-tab > span { display: inline-block; font-family: "LatoLight"; font-size: 18px;  -webkit-transition: all 0.2s; color: #a0a0a0; border-bottom: 8px solid transparent; white-space: nowrap; text-overflow: ellipsis; padding-bottom: 10px; max-width: 100%; overflow: hidden;}
+.slick-initialized .swipe-tab.active-tab > span { display: inline-block; font-family: "LatoBold"; color: #000; border-bottom: 8px solid #ffd530; overflow: hidden; }
 .slick-initialized .swipe-tab:hover { color: #000;}
 
-.swipe-tabs { border-bottom: 1px solid #a7a9ac;}
-.slick-list { overflow: hidden; margin-bottom: -3px; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.slick-initialized .swipe-tab-content {
+    white-space: normal;
+    position: relative;
+    min-height: 25px;
+    float: left;
+}
 
 
 
@@ -456,6 +418,7 @@ select {
 
 .block_row_item__img { margin-bottom: 20px; }
 .block_row_item__header {  font-family: "LatoBoldItalic"; font-size: 30px; margin-bottom: 35px;}
+.block_row_item__desc { white-space: normal;}
 .block_row_items { padding: 0 100px; }
 
 .block_video_desc { font-family: "LatoBoldItalic"; font-size: 30px; margin-top: 57px;}
@@ -466,6 +429,10 @@ select {
 .carouseller .carouseller__right:hover { opacity: 0.6;}
 .cases_header { width: 200px;  font-family: "LatoBoldItalic"; font-size: 30px; margin-top: 57px;}
 
+
+.main_menu__toggle,
+.main_menu,
+.main_menu__login { margin-bottom: 20px;}
 
 .main_menu__toggle { display: block; width: 137px; float: left; }
 .main_menu { float: left; }
@@ -505,7 +472,7 @@ select {
 
 
 
-.popup { visibility: hidden; position: fixed; top: 0; right: 0; bottom: 0; left: 0; margin: auto; z-index: 2; background-color: rgba( 27, 13, 54, 0.97); transition: all 0.2s ease; color: #fff; opacity: 0;}
+.popup { visibility: hidden; position: fixed; top: 0; right: 0; bottom: -100px; left: 0; margin: auto; z-index: 2; background-color: rgba( 27, 13, 54, 0.97); transition: all 0.2s ease; color: #fff; opacity: 0; padding-bottom: 100px;}
 .popup.active { visibility: visible; opacity: 1; }
 .popup_close { display: block; width: 20px; height: 20px; background: url(../img/close.png) no-repeat scroll center transparent;}
 .popup_menu li { display: block;  margin-bottom: 47px;}
